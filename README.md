@@ -1,5 +1,4 @@
 
-
 <h1 align="center">📊 SensorLogger</h1>
 
 <p align="center">
@@ -7,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3">
+  <img src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.12">
   <img src="https://img.shields.io/badge/PySerial-Virtual%20Serial-4F46E5?style=for-the-badge" alt="PySerial">
   <img src="https://img.shields.io/badge/Output-CSV-16A34A?style=for-the-badge" alt="CSV">
 </p>
@@ -17,7 +16,6 @@
 </p>
 
 ---
-
 
 ## About
 
@@ -29,7 +27,7 @@ It uses PySerial's virtual serial port (`loop://`) to send and receive simulated
 
 - **Python 3** — Main programming language.
 - **PySerial** — Handles virtual serial communication.
-- **CSV** — Python's built-in module for storing data in CSV files.
+- **csv** — Python's built-in module for storing data in CSV files.
 - **Git & GitHub** — Version control and source code hosting.
 
 ## How it works
@@ -41,11 +39,9 @@ It uses PySerial's virtual serial port (`loop://`) to send and receive simulated
 5. Each value is displayed in the terminal and saved to `temperature.csv`.
 
 The CSV file contains two columns:
-- `numero`: The measurement number.
-- `temperatura`: The simulated temperature value.
 
-### Data Flow
-
+- `measurement`: The sequential measurement number.
+- `temperature`: The simulated temperature value.
 
 ### Data Flow
 
@@ -84,13 +80,12 @@ flowchart LR
     style S3 fill:transparent,stroke:#6EE7B7,stroke-width:1px
 ```
 
-
 ### Sample Output
 
 The following table shows a preview of the simulated temperature measurements stored in `temperature.csv`.
 
-| Measurement  | Temperature (simulated) |
-|:-------------:|:-----------------------:|
+| Measurement | Temperature (simulated) |
+|:-----------:|:-----------------------:|
 | 01 | 20 |
 | 02 | 21 |
 | 03 | 22 |
@@ -106,27 +101,26 @@ The following table shows a preview of the simulated temperature measurements st
 When executed, SensorLogger displays the received values in the terminal:
 
 ```text
-Valore ricevuto: 20
-Valore ricevuto: 21
-Valore ricevuto: 22
-Valore ricevuto: 23
-Valore ricevuto: 24
-Valore ricevuto: 25
-Valore ricevuto: 26
-Valore ricevuto: 27
-Valore ricevuto: 28
-Valore ricevuto: 29
+Received value: 20
+Received value: 21
+Received value: 22
+Received value: 23
+Received value: 24
+Received value: 25
+Received value: 26
+Received value: 27
+Received value: 28
+Received value: 29
 ```
 
 The generated data is also saved automatically to `temperature.csv`.
-
 
 ## How to run
 
 ### Requirements
 
 - Python 3
-- Git
+- Git (for cloning the repository)
 - PySerial
 
 ### Installation
