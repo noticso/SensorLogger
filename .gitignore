@@ -1,0 +1,16 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+
+# Generated data
+weather.csv
+test_weather.csv
+empty_weather.csv
+
+# IDE files
+.vscode/
+.idea/
